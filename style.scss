@@ -1,0 +1,71 @@
+// global rules 
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+body{
+    background-color: #DDD;
+}
+.to-do-list{
+    background-color: white;
+    width: 500px;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 30px;
+    padding: 30px;
+    form{
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        input[type=text]{
+            width: 50%;
+        }
+        button{
+            width: 24%;
+            border: none;
+            outline: navajowhite;
+            cursor: pointer;
+        }
+        button.add-task{
+           background-color: teal;
+           color: white;
+           padding: 10px;
+        }
+        button.delete-all{
+           background-color: rgb(151, 32, 52);
+           color: white;
+           padding: 10px;
+        }
+    }
+    .task-box{
+        display: flex;
+        margin: 5px 0;
+        & > {
+           
+            .task-text{
+                width: 80%;
+                background-color: #F7F7F7;
+                color: #888;
+                padding: 10px;
+                
+            }
+            .delete-task{
+                width: 20%;
+                background-color: #E91E63;
+                color: white;
+                padding: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+    }
+}
